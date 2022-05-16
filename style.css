@@ -9,6 +9,7 @@
     --text-first-color: rgb(0, 0, 0);
     --text-second-color: #414040;
     --link-color: #fff;
+    --ligth-color: #e9e5db4b;
 
     --section-padding: 11.81rem;
     --header-heigth: 4.625rem;
@@ -18,6 +19,7 @@
 
 
 /*====== RESET STYLES */
+
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +37,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
     font-size: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -78,6 +81,12 @@ body{
 }
 
 /*====== HEADER */
+.destaq-home{
+    margin-top: 3.5rem;
+    height: 2rem;
+    background-color: #9D774B;
+}
+
 #header{
     display: flex;
 
@@ -86,7 +95,7 @@ body{
     top: 0;
     z-index: 100;
 
-    background-color: var(--base-color);
+    background-color: #000033;
 }
 
 header .logo a img{
@@ -216,7 +225,6 @@ nav.show .icon-menu{
 
 /*====== HOME  */
 #home{
-    z-index: 0;
     height: 100vh;
     background-image: url(img/bg-hero-teste.jpg);
     clip-path: polygon(100% 0, 14% 0, 100% 100%);
@@ -226,25 +234,37 @@ nav.show .icon-menu{
 }
 
 .hero-img{
-    width: 60%;
+    width: 55%;
     z-index: 1;
     position: absolute;
-    top: calc(var(--header-heigth) + 12rem);
-    padding: 0 2rem;
+    top: calc(var(--header-heigth) + 15rem);
 }
 
-
-.hero-img .hero-text{
-    color: var(--base-color);
+ .hero-text{
+    z-index: 1000;
+    position: absolute;
+    top: 33rem;
+    left: 1rem;
     text-align: center;
-    margin-top: 1rem;
-    font-size: 1.7rem;
-    font-weight: 500;
-    font-family: var(--font-family);
+    color: var(--base-color);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family:'Poppins';
 }
+
+.hero-destaq{
+    font-weight: 800;
+}
+
+
 
 
 /*====== ABOUT  */
+#about{
+    background-color: var(--ligth-color);
+    margin-bottom: 0;
+}
 #about .description,
 .subtitle{
     padding-bottom: 1rem;
@@ -294,6 +314,7 @@ nav.show .icon-menu{
 /*====== PARTNERS  */
 #partners{
     border-bottom: .3px solid rgba(0, 0, 0, 0.11);
+    background-color: var(--ligth-color);
 }
 
 .partner-card{
@@ -301,16 +322,13 @@ nav.show .icon-menu{
 }
 
 .img-container .img-box{
-    width: 40%;
+    width: 50%;
     margin: auto;
-
 }
-
 
 .img-container .img-box img{
     clip-path: circle();
 }
-
    
 .img-container .img-icons{
     display: flex;
@@ -347,6 +365,10 @@ nav.show .icon-menu{
 
 
 /*====== CONTACT  */
+
+#contact {
+    background-color: var(--ligth-color);
+}
 
 #contact .button{
     display: inline-flex;
@@ -397,7 +419,7 @@ nav.show .icon-menu{
 /*====== FOOTER  */
 
 #footer{
-    background-color: var(--base-color-dark);
+    background-color: #000033;
     display: flex;
     padding: 2rem;
     height: 30vh;
@@ -491,16 +513,18 @@ nav.show .icon-menu{
         background-position: top right;
         clip-path: polygon(100% 0, 14% 0, 100% 100%);
         z-index: 0;
+        
     }
 
     .hero-img{
         position: absolute;
-        top: calc(var(--header-heigth) +  10rem);
-        left: 2rem;
+        top: calc(var(--header-heigth) +  15rem);
+        left: .5rem;
         width: 50%;
     }
 
     .hero-text{
+        left: 5rem;
         color: var(--base-color);
         text-align: center;
         margin-top: 1rem;
@@ -519,6 +543,7 @@ nav.show .icon-menu{
 
     #partners .img-box{
         margin:auto;
+        width: 200px;
     }
 
 
@@ -614,12 +639,19 @@ nav.show .icon-menu{
     }
 
     .hero-text{
+        left: 38%;
         color: var(--base-color);
         text-align: center;
         margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 5  00;
         font-family: var(--font-family);
+    }
+
+    .hero-destaq{
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: 7px;
     }
     
     
@@ -662,7 +694,7 @@ nav.show .icon-menu{
     }
 
     #partners .img-box{
-        width: 300px;
+        width: 150px;
     }
 
     #contact .contact{
