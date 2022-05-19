@@ -247,7 +247,7 @@ nav.show .icon-menu{
     left: 1rem;
     text-align: center;
     color: var(--base-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 1px;
     font-family:'Poppins';
@@ -323,7 +323,7 @@ nav.show .icon-menu{
 
 .img-container .img-box{
     width: 50%;
-    margin: auto;
+    margin: 0 auto ;
 }
 
 .img-container .img-box img{
@@ -337,7 +337,6 @@ nav.show .icon-menu{
     gap: 1rem;
     color: var(--base-color);
     cursor: pointer;
-    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -347,6 +346,7 @@ nav.show .icon-menu{
 
 .partner-description .subtitle{
     padding-bottom: 0;
+    text-align: center;
 }
 
 .partner-description p{
@@ -354,7 +354,8 @@ nav.show .icon-menu{
     margin-bottom: 1rem;
 }
 
-.partner-description{
+.partner-description ul{
+    margin: auto;
     text-align: justify;
 }
 
@@ -528,7 +529,7 @@ nav.show .icon-menu{
         color: var(--base-color);
         text-align: center;
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 500;
         font-family: var(--font-family);
     }
@@ -574,6 +575,7 @@ nav.show .icon-menu{
 }
 
 @media (min-width: 1024px) {
+  
     
     header{
         display: flex;
@@ -643,13 +645,13 @@ nav.show .icon-menu{
         color: var(--base-color);
         text-align: center;
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 5  00;
         font-family: var(--font-family);
     }
 
     .hero-destaq{
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 300;
         letter-spacing: 7px;
     }
@@ -679,12 +681,14 @@ nav.show .icon-menu{
     }
 
     #partners .img-container{
-        margin-right: 2rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .partner-card{
         display: flex;
-        justify-content: space-between;
         margin-bottom: 3rem;
         border-bottom: .5px solid rgba(0, 0, 0, 0.247);
     }
@@ -695,6 +699,16 @@ nav.show .icon-menu{
 
     #partners .img-box{
         width: 150px;
+    }
+
+    #partners h3.subtitle{
+       padding-bottom: 0;
+    }
+
+    p.subtitle{
+        font-size: 1.2rem;
+        color: #002656;
+        font-weight: 300;
     }
 
     #contact .contact{
