@@ -240,24 +240,21 @@ nav.show .icon-menu{
     top: calc(var(--header-heigth) + 15rem);
 }
 
- .hero-text{
-    z-index: 1000;
+.hero-text{
     position: absolute;
-    top: 33rem;
-    left: 1rem;
-    text-align: center;
+    bottom: 2rem;
+    left: 15%;
     color: var(--base-color);
-    font-size: 1rem;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    font-family:'Poppins';
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-family);
 }
 
 .hero-destaq{
     font-weight: 800;
 }
-
-
 
 
 /*====== ABOUT  */
@@ -525,7 +522,9 @@ nav.show .icon-menu{
     }
 
     .hero-text{
-        left: 5rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 20%;
         color: var(--base-color);
         text-align: center;
         margin-top: 1rem;
@@ -641,13 +640,9 @@ nav.show .icon-menu{
     }
 
     .hero-text{
-        left: 38%;
-        color: var(--base-color);
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 1rem;
-        font-weight: 5  00;
-        font-family: var(--font-family);
+        position: absolute;
+        bottom: 1rem;
+        left: 40%;
     }
 
     .hero-destaq{
